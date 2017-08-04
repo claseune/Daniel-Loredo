@@ -3,7 +3,8 @@ import { NavController } from 'ionic-angular';
 import { EventosPage } from '../eventos/eventos';
 import { LoginPage } from '../login/login';
 import { Base1Page } from '../base1/base1';
-
+import {GpsPage} from '../GPS/GPS';
+import {ColorPickerPage} from '../color-picker/color-picker';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -24,7 +25,7 @@ val: 'true'
 
   loadLogin()
   {
-this.navCtrl.push(LoginPage,
+this.navCtrl.push(GpsPage,
 {
 val: 'true'
 })
@@ -32,7 +33,7 @@ val: 'true'
 
   loadData()
   {
-this.navCtrl.push(Base1Page,
+this.navCtrl.push(ColorPickerPage,
 {
 val: 'true'
 })
